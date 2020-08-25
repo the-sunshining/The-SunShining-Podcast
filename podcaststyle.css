@@ -1,0 +1,136 @@
+:root {
+    --mainColor1: #ffff00;
+    --mainColor2: #a6a6a6;
+    --mainColor3: #ffffff;
+    --mainColor4: #6c7003;
+    --mainColor5: #000000;
+}
+.BG_c_Y {
+    background-color: var(--mainColor1);
+}
+.BG_c_G {
+    background-color: var(--mainColor2);
+}
+.BG_c_White {
+  background-color: var(--mainColor3);
+}
+.BG_c_D {
+    background-color: var(--mainColor4);
+    color: white;
+}
+.BG_c_Black {
+    background-color: var(--mainColor5);
+}
+body {
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+}
+header {
+  margin-top: 0px;
+    min-height: 100vh;
+    text-align: center;
+    min-width: 95vw;
+    background-color: var(--mainColor4);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.header_h1 {
+position: absolute;
+top: 20%;
+left:25%;
+right: 25%;
+border: 5px solid var(--mainColor2);
+padding: 30px;
+font-size: 80px;
+color: var(--mainColor1);
+}
+section {
+  position: relative;
+    min-height: 100vh;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+    overflow: hidden;
+}
+div {
+  padding: 20px;
+}
+.left_half {
+    float: left;
+    width: 45%;
+  }
+  .right_half {
+    float: right;
+    width: 45%;
+  }
+
+  iframe {
+    width: 100%;
+    height: 500px;
+  }
+  
+
+
+
+
+
+
+footer {
+  background-color: var(--mainColor5);
+  position: relative;
+  min-height: 100vh;
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: 0px;
+  margin-right: 0px;
+  overflow: hidden;
+  color: var(--mainColor3);
+}
+
+
+
+
+
+
+/* Borders or Dividers: */
+
+/* Dashed border */
+hr.dashed {
+    border-top: 3px dashed #bbb;
+  }
+  
+  /* Dotted border */
+  hr.dotted {
+    border-top: 3px dotted #bbb;
+  }
+  
+  /* Solid border */
+  hr.solid {
+    border-top: 3px solid #bbb;
+  }
+  
+  /* Rounded border */
+  hr.rounded {
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
+  }
+
+
+  /* ScrollBar Style! */
+ 
+  ::-webkit-scrollbar {
+    width: 16px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--mainColor4);
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--mainColor1);
+    box-shadow: 0 -100vh 0 100vh var(--mainColor2), 0 0 15px 5px black;
+    border-radius: 20px;
+  }
