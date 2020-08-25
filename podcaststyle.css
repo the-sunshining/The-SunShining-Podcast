@@ -26,6 +26,12 @@ body {
     margin: 0px;
     font-size: 20px;
 }
+
+
+
+
+
+
 header {
   margin-top: 0px;
     min-height: 100vh;
@@ -41,11 +47,45 @@ position: absolute;
 top: 20%;
 left:25%;
 right: 25%;
-border: 5px solid var(--mainColor2);
 padding: 30px;
-font-size: 80px;
-color: var(--mainColor1);
+animation: headerAN;
+animation-iteration-count: infinite;
+animation-duration: 5s;
 }
+@keyframes headerAN {
+  0% {border: 5px solid var(--mainColor2); color: var(--mainColor1);}
+  25% {border: 5px solid greenyellow; color: red;}
+  50% {border: 5px solid green; color: orange;}
+  75% {border: 5px solid red; color: purple;}
+  100% {border: 5px solid var(--mainColor2); color: var(--mainColor1);}
+}
+
+
+
+
+
+button {
+font-size: 20px;
+padding: 10px;
+border-radius: 20px;
+}
+button:hover {
+  animation-name: buttonAN;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes buttonAN {
+0% {background-color: var(--mainColor1);}
+25% {background-color: var(--mainColor4);}
+50% {background-color: var(--mainColor1);}
+75% {background-color: var(--mainColor4);}
+100% {background-color: var(--mainColor1);}
+}
+
+
+
+
 section {
   position: relative;
     min-height: 100vh;
@@ -79,6 +119,18 @@ div {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 footer {
   background-color: var(--mainColor5);
   position: relative;
@@ -91,6 +143,28 @@ footer {
   overflow: hidden;
   color: var(--mainColor3);
 }
+#footerIMG{
+width: 500px;
+min-height: 500px;
+background-position: center;
+background-size: cover;
+animation-name: footerIMGan;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+}
+@keyframes footerIMGan {
+  0%   {background-image: url("IMG/the-sunshining-podcast_logo.png");}
+  25% {background-image: url("IMG/SunLogo.png");}
+  50%   {background-image: url("IMG/the-sunshining-podcast_logo.png");}
+  75% {background-image: url("IMG/SunLogo.png");}
+  100% {background-image: url("IMG/the-sunshining-podcast_logo.png");}
+}
+
+
+
+
+
+
 
 
 
