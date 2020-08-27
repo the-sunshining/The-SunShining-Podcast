@@ -5,27 +5,90 @@
     --mainColor4: #6c7003;
     --mainColor5: #000000;
 }
-.BG_c_Y {
-    background-color: var(--mainColor1);
-}
-.BG_c_G {
-    background-color: var(--mainColor2);
-}
-.BG_c_White {
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+/*
+font-family: 'Abril Fatface', cursive;
+font-family: 'Open Sans', sans-serif;
+*/
+
+
+
+
+#Intro {
   background-color: var(--mainColor3);
 }
-.BG_c_D {
-    background-color: var(--mainColor4);
-    color: white;
+
+#E01 {
+background-color: rgb(43, 244, 251);
 }
-.BG_c_Black {
-    background-color: var(--mainColor5);
+#E02 {
+  background-color: var(--mainColor1);
 }
+#E03 {
+  background-color: var(--mainColor4);
+}
+#E04 {
+  background-color: var(--mainColor2);
+}
+#E05 {
+  background-color: var(--mainColor5);
+  color: white;
+}
+#E06 {
+  background-color: var(--mainColor3);
+}
+#E07 {
+  background-color: var(--mainColor1);
+}
+#E08 {
+  background-color: var(--mainColor4);
+}
+#E09 {
+  background-color: var(--mainColor2);
+}
+#E10 {
+  background-color: var(--mainColor5);
+  color: white;
+}
+#E11 {
+  background-color: var(--mainColor3);
+}
+#E12 {
+  background-color: var(--mainColor1);
+}
+
+
+
+
+
 body {
     padding: 0px;
     margin: 0px;
     font-size: 20px;
+    background-color: var(--mainColor4);
+    animation-name: bodyback;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
+@keyframes bodyback {
+  0% {background-color: var(--mainColor1);}
+  25% {background-color: var(--mainColor4);}
+  50% {background-color: red;}
+  75% {background-color: var(--mainColor4);}
+  100% {background-color: var(--mainColor1);}
+  }
+h1 {
+  font-family: 'Abril Fatface', cursive;
+}
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
 
 
 
@@ -64,6 +127,18 @@ animation-duration: 5s;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 button {
 font-size: 20px;
 padding: 10px;
@@ -86,15 +161,26 @@ button:hover {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 section {
   position: relative;
     min-height: 100vh;
     padding: 20px;
     padding-left: 50px;
     padding-right: 50px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 20px;
     overflow: hidden;
+    border-radius: 25px;
 }
 div {
   padding: 20px;
@@ -108,11 +194,12 @@ div {
     width: 45%;
   }
 
-  iframe {
-    width: 100%;
-    height: 500px;
-  }
+
   
+
+
+
+
 
 
 
@@ -173,26 +260,19 @@ animation-iteration-count: infinite;
 
 /* Borders or Dividers: */
 
-/* Dashed border */
-hr.dashed {
-    border-top: 3px dashed #bbb;
-  }
-  
-  /* Dotted border */
-  hr.dotted {
-    border-top: 3px dotted #bbb;
-  }
-  
   /* Solid border */
   hr.solid {
-    border-top: 3px solid #bbb;
+    border-top: 5px solid #bbb;
+    margin: 0%;
+    display: none;
   }
   
-  /* Rounded border */
-  hr.rounded {
-    border-top: 8px solid #bbb;
-    border-radius: 5px;
-  }
+
+
+
+
+
+
 
 
   /* ScrollBar Style! */
@@ -208,3 +288,11 @@ hr.dashed {
     box-shadow: 0 -100vh 0 100vh var(--mainColor2), 0 0 15px 5px black;
     border-radius: 20px;
   }
+
+  /*
+  @keyframes for_Scrol_and_Body {
+    0% { }
+    50% {}
+    100% {}
+  }
+  */
