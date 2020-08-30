@@ -231,7 +231,7 @@ footer {
   color: var(--mainColor3);
 }
 #footerIMG{
-width: 500px;
+min-width: 100%;
 min-height: 500px;
 background-position: center;
 background-size: cover;
