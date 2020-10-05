@@ -15,6 +15,9 @@ font-family: 'Open Sans', sans-serif;
 
 
 
+#BG_Main {
+  background-color: #6c7003;
+}
 
 #Intro {
   background-color: var(--mainColor3);
@@ -98,7 +101,7 @@ p {
 
 header {
   margin-top: 0px;
-    min-height: 100vh;
+    min-height: 100px;
     text-align: center;
     min-width: 95vw;
     background-color: var(--mainColor4);
@@ -107,10 +110,6 @@ header {
     position: relative;
 }
 .header_h1 {
-position: absolute;
-top: 20%;
-left:25%;
-right: 25%;
 padding: 30px;
 animation: headerAN;
 animation-iteration-count: infinite;
@@ -175,7 +174,7 @@ button:hover {
 
 section {
   position: relative;
-    min-height: 100vh;
+    min-height: 100px;
     padding: 20px;
     padding-left: 50px;
     padding-right: 50px;
