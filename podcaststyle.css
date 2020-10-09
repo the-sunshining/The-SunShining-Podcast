@@ -111,9 +111,11 @@ header {
 }
 .header_h1 {
 padding: 30px;
-animation: headerAN;
+color: red;
+/* animation: headerAN;
 animation-iteration-count: infinite;
 animation-duration: 5s;
+*/
 }
 @keyframes headerAN {
   0% {border: 5px solid var(--mainColor2); color: var(--mainColor1);}
