@@ -15,52 +15,6 @@ font-family: 'Open Sans', sans-serif;
 
 
 
-#BG_Main {
-  background-color: #6c7003;
-}
-
-#Intro {
-  background-color: var(--mainColor3);
-}
-
-#E01 {
-background-color: rgb(43, 244, 251);
-}
-#E02 {
-  background-color: var(--mainColor1);
-}
-#E03 {
-  background-color: var(--mainColor4);
-}
-#E04 {
-  background-color: var(--mainColor2);
-}
-#E05 {
-  background-color: var(--mainColor5);
-  color: white;
-}
-#E06 {
-  background-color: var(--mainColor3);
-}
-#E07 {
-  background-color: var(--mainColor1);
-}
-#E08 {
-  background-color: var(--mainColor4);
-}
-#E09 {
-  background-color: var(--mainColor2);
-}
-#E10 {
-  background-color: var(--mainColor5);
-  color: white;
-}
-#E11 {
-  background-color: var(--mainColor3);
-}
-#E12 {
-  background-color: var(--mainColor1);
-}
 
 
 
@@ -104,6 +58,7 @@ header {
     min-height: 100px;
     text-align: center;
     min-width: 95vw;
+    background-image: url("IMG/sun_photo.jpg");
     background-color: var(--mainColor4);
     background-position: center;
     background-size: cover;
@@ -128,7 +83,53 @@ animation-duration: 5s;
 
 
 
+/* Nav */
+ .nav_contain {
+   position: fixed;
+   top: 0px;
+   left: 0px;
+   right: 0px;
+   height: 50px;
+   /*
+   background-color: #ffff00;
+   border: 1px solid black;
+   */
+ }
+nav {
+  display: none;
+}
 
+/*3 bar */
+.bar_container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+  padding: 0px;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
 
 
 
@@ -227,15 +228,17 @@ div {
 footer {
   background-color: var(--mainColor5);
   position: relative;
-  min-height: 100vh;
-  padding: 20px;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin-left: 0px;
-  margin-right: 0px;
-  overflow: hidden;
+    min-height: 100px;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 25px;
   color: var(--mainColor3);
 }
+
+/*
 #footerIMG{
 min-width: 100%;
 min-height: 500px;
@@ -252,6 +255,8 @@ animation-iteration-count: infinite;
   75% {background-image: url("IMG/SunLogo.png");}
   100% {background-image: url("IMG/the-sunshining-podcast_logo.png");}
 }
+
+*/
 
 
 
@@ -302,3 +307,55 @@ animation-iteration-count: infinite;
     100% {}
   }
   */
+
+
+
+
+
+
+  #BG_Main {
+    background-color: #6c7003;
+  }
+  
+  #Intro {
+    background-color: var(--mainColor3);
+  }
+  
+  #E01 {
+  background-color: rgb(43, 244, 251);
+  }
+  #E02 {
+    background-color: var(--mainColor1);
+  }
+  #E03 {
+    background-color: var(--mainColor4);
+  }
+  #E04 {
+    background-color: var(--mainColor2);
+  }
+  #E05 {
+    background-color: var(--mainColor5);
+    color: white;
+  }
+  #E06 {
+    background-color: var(--mainColor3);
+  }
+  #E07 {
+    background-color: var(--mainColor1);
+  }
+  #E08 {
+    background-color: var(--mainColor4);
+  }
+  #E09 {
+    background-color: var(--mainColor2);
+  }
+  #E10 {
+    background-color: var(--mainColor5);
+    color: white;
+  }
+  #E11 {
+    background-color: var(--mainColor3);
+  }
+  #E12 {
+    background-color: var(--mainColor1);
+  }
