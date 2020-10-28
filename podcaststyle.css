@@ -3,7 +3,7 @@
     --mainColor2: #a6a6a6;
     --mainColor3: #ffffff;
     --mainColor4: #6c7003;
-    --mainColor5: #000000;
+    --mainColor5: rgba(0, 0, 0, 0.725);
 }
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
